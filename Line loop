@@ -1,0 +1,25 @@
+/* OpenGL animation code goes here */
+
+           glMatrixMode( GL_PROJECTION );
+    glLoadIdentity();
+
+    glMatrixMode( GL_MODELVIEW );
+
+    glLoadIdentity();
+
+    glColor3f( 1, 1, 1 );
+    glBegin(GL_LINE_LOOP);
+      glVertex2f(-1.0,0.0);
+      glVertex2f(0.0,-1.0);
+      glVertex2f(1.0,0.0);
+      glVertex2f(0.0,1.0);
+
+            glEnd();
+
+            glPopMatrix();
+
+            SwapBuffers(hDC);
+
+            Sleep (1);
+        }
+    }
